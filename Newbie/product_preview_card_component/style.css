@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap");
+
+:root {
+  --primary-dark-cyan: 158, 36%, 37%;
+  --primary-cream: 30, 38%, 92%;
+
+  --neutral-very-dark-blue: 212, 21%, 14%;
+  --neutral-dark-grayish-blue: 228, 12%, 48%;
+  --neutral-white: 0, 0%, 100%;
+
+  --color-hover: 158, 36%, calc(37% - 20%);
+
+  --font-default: "Montserrat", sans-serif;
+  --font-emphasis: "Fraunces", serif;
+
+  --fw-medium: 500;
+  --fw-bold: 700;
+
+  --fs-400: 1.125rem;
+  --fs-500: 1.25rem;
+  --fs-600: 1.5rem;
+  --fs-700: 1.75rem;
+  --fs-800: 2rem;
+  --fs-900: 5rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  font: inherit;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: hsl(var(--neutral-dark-grayish-blue));
+  background-color: hsl(var(--primary-cream));
+  font-family: var(--font-default);
+  font-size: 14px;
+}
+
+.product-preview {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 42em;
+  margin-inline: 1em;
+  background-color: hsl(var(--neutral-white));
+  border-radius: 1em;
+  overflow: hidden;
+}
+
+.flex-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2em;
+}
+
+@media (max-width: 600px) {
+  .product-preview {
+    grid-template-columns: initial;
+  }
+
+  .product-preview img {
+    content: url("./images/image-product-mobile.jpg");
+  }
+
+  .flex-group {
+    gap: 1em;
+  }
+}
+
+.flex-group p {
+  line-height: 1.5;
+}
+
+.perfume-name {
+  color: hsl(var(--neutral-very-dark-blue));
+  font-size: var(--fs-800);
+  font-family: var(--font-emphasis);
+  font-weight: var(--fw-bold);
+  line-height: 1;
+}
+
+.price-group {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.sale-price {
+  color: hsl(var(--primary-dark-cyan));
+  font-family: var(--font-emphasis);
+  font-size: var(--fs-800);
+}
+
+.add-btn {
+  display: flex;
+  justify-content: center;
+  color: hsl(var(--neutral-white));
+  background-color: hsl(var(--primary-dark-cyan));
+  border: 0;
+  border-radius: 0.5em;
+  padding: 1em;
+  gap: 1em;
+}
+
+.add-btn:hover,
+.add-btn:focus-visible {
+  background-color: hsl(var(--color-hover));
+}
+
+.attribution {
+  margin: 1.5em;
+  text-align: center;
+}

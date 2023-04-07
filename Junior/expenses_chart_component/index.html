@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Expenses chart component</title>
+</head>
+
+<body>
+  <main>
+    <header class="flex-group">
+      <h1 class="heading">My balance<span class="balance">$921.48</span></h1>
+      <svg width="72" height="48" viewBox="0 0 72 48" xmlns="http://www.w3.org/2000/svg">
+        <g fill="none" fill-rule="evenodd">
+          <circle fill="#382314" cx="48" cy="24" r="24" />
+          <circle stroke="#FFF" stroke-width="2" cx="24" cy="24" r="23" />
+        </g>
+      </svg>
+    </header>
+    <div class="summary">
+      <h2 class="graph-heading">Spending - Last 7 days</h2>
+      <dl class="graph">
+        <dd id="mon" class="graph-bar">mon<span class="popup"></span></dd>
+        <dd id="tue" class="graph-bar">tue<span class="popup"></span></dd>
+        <dd id="wed" class="graph-bar">wed<span class="popup"></span></dd>
+        <dd id="thu" class="graph-bar">thu<span class="popup"></span></dd>
+        <dd id="fri" class="graph-bar">fri<span class="popup"></span></dd>
+        <dd id="sat" class="graph-bar">sat<span class="popup"></span></dd>
+        <dd id="sun" class="graph-bar">sun<span class="popup"></span></dd>
+      </dl>
+      <hr>
+      <div class="total-group">
+        <p>Total this month</p>
+        <div class="flex-group">
+          <p class="total">$<span id="total">478.33</span></p>
+          <p><span class="rate">+2.4%</span> from last month</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/Lemon1903" target="_blank">Khent Alba</a>.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/countup/dist/countUp.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>

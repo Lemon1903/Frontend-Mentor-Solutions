@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+
+:root {
+  --primary-purple: hsl(259, 100%, 65%);
+  --primary-light-red: hsl(0, 100%, 67%);
+  --neutral-white: hsl(0, 0%, 100%);
+  --neutral-off-white: hsl(0, 0%, 94%);
+  --neutral-light-grey: hsl(0, 0%, 86%);
+  --neutral-smokey-grey: hsl(0, 1%, 44%);
+  --neutral-off-black: hsl(0, 0%, 8%);
+
+  --line-thickness: 2px;
+
+  --fw-400: 400;
+  --fw-700: 700;
+  --fw-800: 800;
+
+  --fs-400: 1.125rem;
+  --fs-800: 2rem;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  font: inherit;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--neutral-smokey-grey);
+  background-color: var(--neutral-off-white);
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  max-width: 52em;
+  margin-inline: 1.5em;
+  border-radius: 1em 1em 12em 1em;
+  padding: 3em;
+  background-color: var(--neutral-white);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.hide {
+  display: none;
+}
+
+.form-group {
+  --hover-color: var(--primary-purple);
+  --line-color: var(--neutral-light-grey);
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.form-group.error {
+  --font-color: var(--primary-light-red);
+  --hover-color: var(--primary-light-red);
+  --line-color: var(--primary-light-red);
+}
+
+.birth-inputs {
+  --label-size: 0.9rem;
+  grid-area: 1 / 1 / 2 / 2;
+  display: flex;
+  gap: 2em;
+}
+
+.birth-inputs label {
+  color: var(--font-color);
+  font-size: var(--label-size);
+  font-weight: var(--fw-800);
+  letter-spacing: 0.35ch;
+  line-height: 1;
+}
+
+.birth-inputs input {
+  margin: 0.25em 0;
+  width: 100%;
+  border: var(--line-thickness) solid var(--line-color);
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  font-size: var(--fs-800);
+}
+
+.birth-inputs input:hover,
+.birth-inputs input:focus-visible {
+  outline: none;
+  border-color: var(--hover-color);
+  cursor: pointer;
+}
+
+.error-text {
+  color: var(--font-color);
+  font-size: var(--label-size);
+  font-style: italic;
+}
+
+.divider {
+  align-self: center;
+  grid-area: 2 / 1 / 3 / -1;
+  height: var(--line-thickness);
+  border: none;
+  background-color: var(--neutral-light-grey);
+}
+
+.calculate-button {
+  justify-self: end;
+  grid-area: 2 / 2 / 3 / -1;
+  border: none;
+  border-radius: 100%;
+  padding: 1.5em;
+  background-color: var(--primary-purple);
+}
+
+.calculate-button:hover,
+.calculate-button:focus-visible {
+  background-color: var(--neutral-off-black);
+}
+
+.output {
+  color: var(--neutral-off-black);
+  font-style: italic;
+  font-weight: var(--fw-800);
+  line-height: 1;
+}
+
+.output span {
+  color: var(--primary-purple);
+}
+
+@media screen and (max-width: 720px) {
+  main {
+    border-bottom-right-radius: 5em;
+    padding: 3em 1.5em;
+  }
+
+  .form-group {
+    grid-template-columns: initial;
+    margin-bottom: 0.5em;
+  }
+
+  .birth-inputs {
+    --label-size: 0.7rem;
+    gap: 1em;
+  }
+
+  .birth-inputs input {
+    padding: 0.75rem;
+    font-size: var(--fs-400);
+  }
+
+  .calculate-button {
+    justify-self: center;
+    margin: 1.5em 0;
+    padding: 1em;
+  }
+
+  .calculate-button img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}

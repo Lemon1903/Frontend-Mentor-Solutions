@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+
+<body>
+  <main>
+    <div class="form-group">
+      <div class="birth-inputs">
+        <div class="input-group">
+          <label>DAY</label>
+          <input id="day" type="number" placeholder="DD">
+          <p class="error-text hide"></p>
+        </div>
+        <div class="input-group">
+          <label>MONTH</label>
+          <input id="month" type="number" placeholder="MM">
+          <p class="error-text hide"></p>
+        </div>
+        <div class="input-group">
+          <label>YEAR</label>
+          <input id="year" type="number" placeholder="YYYY">
+          <p class="error-text hide"></p>
+        </div>
+      </div>
+      <hr class="divider">
+      <button id="calculate-button" class="calculate-button accent-purple">
+        <img src="./assets/images/icon-arrow.svg" alt="">
+      </button>
+    </div>
+    <div class="output">
+      <p><span id="year-gap" class="accent-purple">--</span> years</p>
+      <p><span id="month-gap" class="accent-purple">--</span> months</p>
+      <p><span id="day-gap" class="accent-purple">--</span> days</p>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/countup/dist/countUp.min.js"></script>
+  <script type="module" src="index.js"></script>
+</body>
+
+</html>
