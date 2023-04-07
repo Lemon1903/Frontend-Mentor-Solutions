@@ -2,8 +2,7 @@
 
 # Frontend Mentor Solutions
 
-Here is the collection of my Frontend Mentor solutions for practicing<br>
-and honing my skills in Frontend Development.
+Here is the collection of my Frontend Mentor solutions for practicing<br>and honing my skills in Frontend Development.
 
 [== Frontend Mentor ==](https://www.frontendmentor.io/home)<br>
 [== My Frontend Mentor Profile ==](https://www.frontendmentor.io/profile/Lemon1903)
