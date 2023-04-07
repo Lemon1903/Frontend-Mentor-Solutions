@@ -2,10 +2,12 @@
 
 # Frontend Mentor Solutions
 
-<p style="max-width: 55ch; font-size: 1.125rem;">Here is the collection of my Frontend Mentor solutions for practicing and honing my skills in Frontend Development.</p>
+Here is the collection of my Frontend Mentor solutions for practicing and honing my skills in Frontend Development.
 
 [== Frontend Mentor ==](https://www.frontendmentor.io/home)<br>
 [== My Frontend Mentor Profile ==](https://www.frontendmentor.io/profile/Lemon1903)
+
+---
 
 ## Newbie Level
 
