@@ -1,4 +1,4 @@
-<center>
+<div align="center">
 
 # Frontend Mentor Solutions
 
@@ -25,4 +25,4 @@
 |      [Age Calculator]()      |   link   |    repo    |
 | [Expenses Chart Component]() |   link   |    repo    |
 
-</center>
+</div>
