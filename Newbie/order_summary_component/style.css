@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  /* Primary */
+
+  --primary-pale-blue: hsl(225, 100%, 94%);
+  --primary-bright-blue: hsl(245, 75%, 52%);
+
+  /* Neutral */
+
+  --neutral-very-pale-blue: hsl(225, 100%, 98%);
+  --neutral-desaturated-blue: hsl(224, 23%, 55%);
+  --neutral-dark-blue: hsl(223, 47%, 23%);
+
+  /* Box Shadow */
+  --dark-blue-hsl: 223, 47%, 23%;
+
+  --default-font: "Red Hat Display", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  font: inherit;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: no-repeat top / 100% url("./images/pattern-background-desktop.svg") var(--primary-pale-blue);
+  font-family: var(--default-font);
+  color: var(--neutral-desaturated-blue);
+}
+
+main {
+  max-width: 25em;
+  overflow: hidden;
+  margin: 1em;
+  box-shadow: 0 1.5em 1.75em -0.5em hsl(var(--dark-blue-hsl), 0.2);
+  border-radius: 1em;
+  background-color: white;
+}
+
+.image {
+  overflow: hidden;
+}
+
+.image img {
+  transition: transform 0.5s ease;
+}
+
+.image img:hover {
+  transform: scale(1.25);
+}
+
+.font-bold {
+  font-weight: 900;
+}
+
+.order-summary {
+  display: grid;
+  gap: 1.25em;
+  padding: 2em;
+  text-align: center;
+}
+
+.title-header {
+  transform: translateY(0.2em);
+  font-size: 1.7rem;
+  color: var(--neutral-dark-blue);
+}
+
+.flex-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.5em;
+  border-radius: 0.5em;
+  padding: 1.5em;
+  background-color: var(--neutral-very-pale-blue);
+  text-align: left;
+  color: var(--neutral-dark-blue);
+}
+
+.flex-group svg {
+  transition: transform 0.5s ease;
+}
+
+.flex-group svg:hover {
+  transform: scale(1.25);
+}
+
+.flex-group span {
+  display: block;
+  line-height: 2;
+  font-weight: 500;
+  color: var(--neutral-desaturated-blue);
+}
+
+.change {
+  flex-grow: 1;
+  transition: filter 0.2s ease;
+  text-align: right;
+  color: var(--primary-bright-blue);
+}
+
+.change:hover,
+.change:focus-visible {
+  text-decoration: none;
+  filter: brightness(2);
+}
+
+.proceed-button {
+  transition: filter 0.2s ease;
+  margin: 0.5em 0;
+  box-shadow: 0 1.5em 1.5em -0.5em hsl(var(--dark-blue-hsl), 0.3);
+  border: none;
+  border-radius: 0.75em;
+  padding: 1em;
+  background-color: var(--primary-bright-blue);
+  color: white;
+}
+
+.proceed-button:hover,
+.proceed-button:focus-visible {
+  filter: brightness(2);
+}
+
+.cancel {
+  transition: color 0.2s ease;
+  margin-bottom: 0.5em;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 900;
+}
+
+.cancel:hover,
+.cancel:focus-visible {
+  color: var(--neutral-dark-blue);
+}
+
+@media screen and (max-width: 440px) {
+  body {
+    background: no-repeat top / 100% url("./images//pattern-background-mobile.svg") var(--primary-pale-blue);
+  }
+
+  .order-summary {
+    padding: 1.5em;
+  }
+
+  .order-summary p {
+    justify-self: center;
+    max-width: 25ch;
+    line-height: 1.5;
+  }
+
+  .title-header {
+    font-size: 1.45rem;
+  }
+
+  .flex-group {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 355px) {
+  .flex-group {
+    display: grid;
+    justify-items: start;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 35px 20px;
+    gap: 0.5em 1em;
+    padding: 1em;
+  }
+
+  .flex-group svg {
+    grid-area: 1 / 1 / -1 / 2;
+  }
+
+  .flex-group p {
+    justify-self: start;
+  }
+
+  .flex-group span {
+    line-height: 1;
+  }
+}
