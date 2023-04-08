@@ -17,6 +17,7 @@ Here is the collection of my Frontend Mentor solutions for practicing<br>and hon
 |     [Reseults Summary](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV)      |   [Live](https://lemon1903.github.io/Frontend-Mentor-Solutions/Newbie/results_summary_component)    |   [Repo](https://github.com/Lemon1903/Frontend-Mentor-Solutions/tree/master/Newbie/results_summary_component)    |
 | [Product Preview Card](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa) | [Live](https://lemon1903.github.io/Frontend-Mentor-Solutions/Newbie/product_preview_card_component) | [Repo](https://github.com/Lemon1903/Frontend-Mentor-Solutions/tree/master/Newbie/product_preview_card_component) |
 |     [NFT Preview Card](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U)      |   [Live](https://lemon1903.github.io/Frontend-Mentor-Solutions/Newbie/nft_preview_card_component)   |   [Repo](https://github.com/Lemon1903/Frontend-Mentor-Solutions/tree/master/Newbie/nft_preview_card_component)   |
+| [Order Summary Component](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj/hub)  |   [Live](https://lemon1903.github.io/Frontend-Mentor-Solutions/Newbie/order_summary_component)   |   [Repo](https://github.com/Lemon1903/Frontend-Mentor-Solutions/tree/master/Newbie/order_summary_component)   |
 
 ## Junior Level
 
