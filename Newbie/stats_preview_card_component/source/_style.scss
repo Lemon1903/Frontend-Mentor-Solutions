@@ -1,0 +1,77 @@
+@mixin overlay($bg-color: var(--color-ui-accent)) {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $bg-color;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--color-main-bg);
+  font-family: var(--font-default);
+  color: var(--color-paragraph);
+}
+
+main {
+  overflow: hidden;
+  margin: 1em;
+  border-radius: 0.5em;
+  background-color: var(--color-card-bg);
+}
+
+.img-container {
+  position: relative;
+
+  .overlay {
+    @include overlay();
+    mix-blend-mode: color-burn;
+  }
+
+  &::after {
+    @include overlay();
+    content: "";
+    opacity: 0.4;
+  }
+}
+
+.content {
+  display: grid;
+  justify-items: center;
+  gap: 1em;
+  padding: 2.5em 2em;
+  text-align: center;
+
+  h1 {
+    font-size: 2rem;
+    max-width: 24ch;
+
+    span {
+      color: var(--color-ui-accent);
+    }
+  }
+
+  > p {
+    margin: 0 0.5em 1em 0.5em;
+    line-height: 1.5;
+  }
+}
+
+.total-group {
+  display: grid;
+  gap: 2em;
+  color: var(--color-stat-headings);
+
+  p {
+    display: grid;
+    gap: 5px;
+    font-size: 0.9rem;
+  }
+
+  span {
+    font-size: 1.75rem;
+  }
+}

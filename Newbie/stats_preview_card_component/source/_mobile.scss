@@ -1,0 +1,40 @@
+@media screen and (min-width: 40em) {
+  main {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .img-container {
+    width: 36em;
+    background: no-repeat center url("../images//image-header-desktop.jpg");
+    background-size: cover;
+
+    img {
+      visibility: hidden;
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: min(5vw, 5em);
+    text-align: left;
+
+    h1 {
+      max-width: 16ch;
+      font-size: 2.5rem;
+    }
+
+    > p {
+      flex-grow: 1;
+      margin: 0 0 2em 0;
+      max-width: 40ch;
+    }
+  }
+
+  .total-group {
+    display: flex;
+    gap: min(5vw, 4.5em);
+  }
+}
