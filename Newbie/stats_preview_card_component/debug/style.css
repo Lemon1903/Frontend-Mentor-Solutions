@@ -150,6 +150,7 @@ main {
     flex-direction: row-reverse;
   }
   .img-container img {
+    content: url("../images/image-header-desktop.jpg");
     width: 36em;
     height: 100%;
     object-fit: cover;
@@ -159,6 +160,7 @@ main {
     flex-direction: column;
     gap: 2em;
     padding: min(6vw, 5em);
+    padding-bottom: min(7vw, 4em);
     text-align: left;
   }
   .content h1 {
@@ -167,7 +169,7 @@ main {
   }
   .content > p {
     flex-grow: 1;
-    margin: 0 0 2em 0;
+    margin: 0 0 3em 0;
     max-width: 40ch;
   }
   .total-group {
