@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+:root {
+  --color-main-bg: hsl(233, 47%, 7%);
+  --color-card-bg: hsl(244, 38%, 16%);
+  --color-ui-accent: hsl(277, 64%, 61%);
+  --color-text-primary: hsl(0, 0%, 100%);
+  --color-paragraph: hsla(0, 0%, 100%, 0.75);
+  --color-stat-headings: hsla(0, 0%, 100%, 0.6);
+  --font-header: "Inter", sans-serif;
+  --font-default: "Lexend Deca", sans-serif;
+}
+
+* {
+  margin: 0;
+  font: inherit;
+}
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+.text-white {
+  color: var(--color-text-primary);
+}
+
+.header-font {
+  font-family: var(--font-header);
+  font-weight: 700;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--color-main-bg);
+  font-family: var(--font-default);
+  color: var(--color-paragraph);
+}
+
+main {
+  overflow: hidden;
+  margin: 1em;
+  border-radius: 0.5em;
+  background-color: var(--color-card-bg);
+}
+
+.img-container {
+  position: relative;
+}
+.img-container .overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-ui-accent);
+  mix-blend-mode: color-burn;
+}
+.img-container::after {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-ui-accent);
+  content: "";
+  opacity: 0.4;
+}
+
+.content {
+  display: grid;
+  justify-items: center;
+  gap: 1em;
+  padding: 2.5em 2em;
+  text-align: center;
+}
+.content h1 {
+  font-size: 2rem;
+  max-width: 24ch;
+}
+.content h1 span {
+  color: var(--color-ui-accent);
+}
+.content > p {
+  margin: 0 0.5em 1em 0.5em;
+  line-height: 1.5;
+}
+
+.total-group {
+  display: grid;
+  gap: 2em;
+  color: var(--color-stat-headings);
+}
+.total-group p {
+  display: grid;
+  gap: 5px;
+  font-size: 0.9rem;
+}
+.total-group span {
+  font-size: 1.75rem;
+}
+
+@media screen and (min-width: 40em) {
+  main {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .img-container {
+    width: 36em;
+    background: no-repeat center url("../images//image-header-desktop.jpg");
+    background-size: cover;
+  }
+  .img-container img {
+    visibility: hidden;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: min(5vw, 5em);
+    text-align: left;
+  }
+  .content h1 {
+    max-width: 16ch;
+    font-size: 2.5rem;
+  }
+  .content > p {
+    flex-grow: 1;
+    margin: 0 0 2em 0;
+    max-width: 40ch;
+  }
+  .total-group {
+    display: flex;
+    gap: min(5vw, 4.5em);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
