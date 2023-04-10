@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/order-summary-component-css-w-hover-effects-0Rmz6tpptw](https://www.frontendmentor.io/solutions/order-summary-component-css-w-hover-effects-0Rmz6tpptw)
+- Live Site URL: [https://lemon1903.github.io/Frontend-Mentor-Solutions/Newbie/order_summary_component/](https://lemon1903.github.io/Frontend-Mentor-Solutions/Newbie/order_summary_component/)
 
 ## My process
 
