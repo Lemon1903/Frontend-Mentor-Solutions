@@ -4,21 +4,17 @@
     flex-direction: row-reverse;
   }
 
-  .img-container {
+  .img-container img {
     width: 36em;
-    background: no-repeat center url("../images//image-header-desktop.jpg");
-    background-size: cover;
-
-    img {
-      visibility: hidden;
-    }
+    height: 100%;
+    object-fit: cover;
   }
 
   .content {
     display: flex;
     flex-direction: column;
     gap: 2em;
-    padding: min(5vw, 5em);
+    padding: min(6vw, 5em);
     text-align: left;
 
     h1 {

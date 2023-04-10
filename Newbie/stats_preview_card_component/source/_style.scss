@@ -1,9 +1,32 @@
+$opening-anim: fadeIn 1s ease backwards;
+$anim-delay: 200ms;
+
 @mixin overlay($bg-color: var(--color-ui-accent)) {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
   background-color: $bg-color;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes zoom-out {
+  from {
+    transform: scale(1.5);
+  }
+
+  to {
+    transform: scale(1);
+  }
 }
 
 body {
@@ -25,16 +48,26 @@ main {
 
 .img-container {
   position: relative;
-
-  .overlay {
-    @include overlay();
-    mix-blend-mode: color-burn;
-  }
+  overflow: hidden;
 
   &::after {
     @include overlay();
     content: "";
     opacity: 0.4;
+  }
+
+  &:hover img {
+    transform: scale(1.2);
+  }
+
+  img {
+    transition: transform 0.3s ease;
+    animation: zoom-out 1.3s ease-out;
+  }
+
+  .overlay {
+    @include overlay();
+    mix-blend-mode: color-burn;
   }
 }
 
@@ -48,6 +81,7 @@ main {
   h1 {
     font-size: 2rem;
     max-width: 24ch;
+    animation: $opening-anim;
 
     span {
       color: var(--color-ui-accent);
@@ -56,6 +90,7 @@ main {
 
   > p {
     margin: 0 0.5em 1em 0.5em;
+    animation: $opening-anim $anim-delay;
     line-height: 1.5;
   }
 }
@@ -69,6 +104,12 @@ main {
     display: grid;
     gap: 5px;
     font-size: 0.9rem;
+
+    @for $i from 1 through 3 {
+      &:nth-child(#{$i}) {
+        animation: $opening-anim $anim-delay * ($i + 1);
+      }
+    }
   }
 
   span {
