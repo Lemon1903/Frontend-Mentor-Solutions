@@ -44,6 +44,7 @@
 
 body {
   overflow: overlay;
+  background-color: hsl(0, 0%, 98%);
   font-family: var(--font-primary);
 
   &::-webkit-scrollbar {
