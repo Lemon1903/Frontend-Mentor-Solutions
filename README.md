@@ -28,5 +28,6 @@ Here is the collection of my Frontend Mentor solutions for practicing<br>and hon
 |  [Time Tracking Dashboard](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw)   | [Live](https://lemon1903.github.io/Frontend-Mentor-Solutions/Junior/time_tracking_dashboard)  | [Repo](https://github.com/Lemon1903/Frontend-Mentor-Solutions/tree/master/Junior/time_tracking_dashboard)  |
 |         [Age Calculator](https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q)         |    [Live](https://lemon1903.github.io/Frontend-Mentor-Solutions/Junior/age_calculator_app)    |    [Repo](https://github.com/Lemon1903/Frontend-Mentor-Solutions/tree/master/Junior/age_calculator_app)    |
 | [Expenses Chart Component](https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt) | [Live](https://lemon1903.github.io/Frontend-Mentor-Solutions/Junior/expenses_chart_component) | [Repo](https://github.com/Lemon1903/Frontend-Mentor-Solutions/tree/master/Junior/expenses_chart_component) |
+|     [Blogr Landing Page](https://www.frontendmentor.io/challenges/blogr-landing-page-EX2RLAApP/hub)      |    [Live](https://lemon1903.github.io/Frontend-Mentor-Solutions/Junior/blogr_landing_page)    |    [Repo](https://github.com/Lemon1903/Frontend-Mentor-Solutions/tree/master/Junior/blogr_landing_page)    |
 
 </div>

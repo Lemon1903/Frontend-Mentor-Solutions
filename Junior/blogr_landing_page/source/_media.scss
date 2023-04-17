@@ -1,0 +1,255 @@
+@use "mixins";
+
+/* Only Laptop and Desktop Screen Sizes */
+@media screen and (min-width: 981px) {
+  .header-menu {
+    gap: min(4.5vw, 4.5em);
+
+    &-button,
+    hr {
+      display: none;
+    }
+
+    .nav {
+      display: inherit;
+      align-items: inherit;
+      flex-grow: 1;
+
+      a:hover {
+        font-weight: bold;
+      }
+
+      &-link {
+        > a {
+          padding-bottom: 30px;
+          line-height: 1.5;
+
+          img {
+            content: url("../images/icon-arrow-light.svg");
+          }
+
+          // prevents layout shift when hovered
+          &::before {
+            content: "";
+            display: block;
+            width: 5.313em;
+          }
+        }
+
+        &:hover {
+          > a {
+            font-weight: bold;
+            text-decoration: underline;
+            text-decoration-color: var(--white);
+
+            img {
+              rotate: -180deg;
+            }
+          }
+
+          .nav-dropdown {
+            display: grid;
+          }
+        }
+      }
+
+      &-dropdown {
+        position: absolute;
+        transform: translate(-25px, 25px);
+        gap: 1em;
+        box-shadow: 0 1em 2em 0.5em rgba(black, 0.2);
+        width: 10.5em;
+        padding: 1.5em;
+        background-color: var(--white);
+        line-height: 1.5;
+        text-align: left;
+
+        a {
+          color: var(--very-dark-blue);
+        }
+      }
+    }
+  }
+
+  .main {
+    padding-bottom: 10em;
+    text-align: left;
+
+    .section {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "top top" "left right";
+      row-gap: 0;
+      padding: 8em 0;
+
+      &-header,
+      &-subheader {
+        margin: 0;
+        font-size: 1.6rem;
+      }
+
+      &-img {
+        grid-area: left;
+        overflow: visible;
+      }
+
+      &-contents {
+        display: inherit;
+        justify-self: start;
+        grid-area: right;
+        gap: 4.5em;
+        margin-right: 3em;
+
+        .section-content {
+          padding: 0;
+
+          p {
+            max-width: 48ch;
+            line-height: 1.8;
+          }
+        }
+      }
+
+      &-top {
+        .section-header {
+          justify-self: center;
+          grid-area: top;
+          padding-bottom: 2.5em;
+          font-size: 2.4rem;
+        }
+
+        .section-img {
+          position: absolute;
+          inset: 40% 0 50% 20em;
+          grid-area: right;
+
+          img {
+            content: url("../images/illustration-editor-desktop.svg");
+          }
+        }
+
+        .section-contents {
+          justify-self: end;
+          grid-area: left;
+          margin: 0 1.25em 0 3em;
+        }
+      }
+
+      &-middle {
+        margin: 8em 0 10em 0;
+        padding: 0;
+        background: no-repeat -13.25em 80% url("../images/bg-pattern-circles.svg"), var(--dark-blue-gradient-r);
+
+        .section-img {
+          justify-self: end;
+          transform: translateY(1.25em);
+          height: 25em;
+          padding: 0 1.25em;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+
+      &-bottom {
+        .section-img {
+          position: absolute;
+          inset: 45% 18em 50% 0;
+          width: auto;
+
+          img {
+            content: url("../images/illustration-laptop-desktop.svg");
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    grid-template-columns: 18vw repeat(3, 1fr);
+    place-items: start;
+    padding: 4em 15vw 4em 12vw;
+    font-size: 1rem;
+    text-align: left;
+
+    &-logo {
+      margin: 0;
+    }
+
+    a {
+      line-height: 2;
+    }
+  }
+}
+
+/* Mobile and Tablet Screen Sizes */
+@media screen and (max-width: 980px) {
+  .header-menu {
+    &-button {
+      display: block;
+      margin-left: auto;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+    }
+
+    .nav {
+      position: absolute;
+      top: 100px;
+      display: none;
+      justify-items: stretch;
+      box-shadow: 0 0.75em 1em 0.5em rgba(black, 0.2);
+      border-radius: 0.5em;
+      width: 100%;
+      padding: 2em 1.5em;
+      background-color: var(--white);
+
+      a {
+        font-size: 1.125rem;
+        font-weight: bold;
+        color: var(--very-dark-blue);
+      }
+
+      hr {
+        display: block;
+        border: none;
+        height: 1px;
+        background-color: var(--grayish-blue);
+      }
+
+      &-buttons {
+        justify-self: center;
+        flex-direction: column;
+        gap: 1em;
+
+        button {
+          background: var(--red-gradient-r);
+          color: var(--white);
+        }
+      }
+    }
+  }
+}
+
+/* Only Mobile Screen Sizes */
+@media screen and (max-width: 480px) {
+  .header {
+    padding: 0 1.25em;
+    background: no-repeat 35% 33.5% url("../images/bg-pattern-intro-mobile.svg"), var(--red-gradient-br);
+
+    &-logo {
+      width: 4.5em;
+    }
+
+    &-content {
+      margin-inline: 0.75em;
+      padding: 7em 0 9em 0;
+
+      @include mixins.header-content-style(2.1rem, 1.125rem);
+    }
+
+    &-buttons {
+      padding: 1.5em 0 0 0;
+    }
+  }
+}

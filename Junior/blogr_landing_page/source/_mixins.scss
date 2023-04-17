@@ -1,0 +1,12 @@
+// Mixins
+@mixin header-content-style($fs-h1, $fs-p) {
+  h1 {
+    font-size: $fs-h1;
+    line-height: 1.25;
+  }
+
+  p {
+    font-size: $fs-p;
+    padding: 1rem 0;
+  }
+}

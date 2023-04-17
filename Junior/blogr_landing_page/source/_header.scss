@@ -1,0 +1,71 @@
+@use "mixins";
+
+/* Desktop and Tablet Sizes */
+.header {
+  border-bottom-left-radius: var(--corner-radius);
+  padding: 0 min(12vw, 10em);
+  background: no-repeat 25% 52.5% / 220% url("../images/bg-pattern-intro-desktop.svg"), var(--red-gradient-r);
+  text-align: center;
+
+  &-menu {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-top: 3em;
+    font-family: var(--font-secondary);
+
+    .nav {
+      gap: 2em;
+
+      &-links {
+        position: relative;
+        display: inherit;
+        flex-grow: inherit;
+        gap: inherit;
+      }
+
+      &-link {
+        > a img {
+          display: inline;
+          margin: 0 0 1px 5px;
+          transition: rotate 0.3s ease;
+        }
+      }
+
+      &-dropdown {
+        display: none;
+        border-radius: 0.5em;
+      }
+
+      &-buttons {
+        display: inherit;
+        align-items: inherit;
+        gap: inherit;
+      }
+    }
+  }
+
+  &-content {
+    padding: 9em 0;
+    color: var(--white);
+    @include mixins.header-content-style(3.75rem, 1.25rem);
+  }
+
+  &-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 0.75em;
+    padding: 1.5em 0;
+
+    button:last-child {
+      border: 1px solid var(--white);
+      background-color: transparent;
+      color: inherit;
+
+      &:hover {
+        background-color: var(--white);
+        color: var(--very-light-red);
+      }
+    }
+  }
+}

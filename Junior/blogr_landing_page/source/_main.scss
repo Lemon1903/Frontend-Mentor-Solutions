@@ -1,0 +1,71 @@
+.main {
+  overflow: hidden;
+  padding: 2.5em 0;
+  color: var(--very-dark-grayish-blue);
+  text-align: center;
+
+  .section {
+    position: relative;
+    display: grid;
+    justify-items: center;
+    gap: 2.5em;
+    padding: 3.5em 0;
+    color: var(--very-dark-blue);
+
+    &-img {
+      display: inherit;
+      justify-items: inherit;
+      place-content: center;
+      overflow: hidden;
+      max-width: 100%;
+    }
+
+    &-header,
+    &-subheader {
+      font-size: 1.6rem;
+      margin-inline: 1em;
+    }
+
+    &-contents {
+      display: inherit;
+      justify-self: center;
+      align-items: center;
+      gap: inherit;
+
+      .section-content {
+        display: inherit;
+        gap: 1.5em;
+        padding: 0 2.25rem;
+
+        p {
+          max-width: 70ch;
+          line-height: 1.5;
+        }
+      }
+    }
+
+    &-middle {
+      margin-top: 14em;
+      border-bottom-left-radius: var(--corner-radius);
+      border-top-right-radius: var(--corner-radius);
+      padding-bottom: 7em;
+      background: no-repeat center -258px url("../images/bg-pattern-circles.svg"), var(--dark-blue-gradient-b);
+      background-size: 155%;
+      color: var(--white);
+
+      .section-header {
+        font-size: min(8.75vw, 2.1em);
+      }
+
+      .section-img {
+        transform: translateY(-7.5em);
+        overflow: visible;
+        height: 6.5em;
+
+        img {
+          width: min(100%, 375px);
+        }
+      }
+    }
+  }
+}

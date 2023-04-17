@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+
+:root {
+  // primary
+  --light-red: hsl(356, 100%, 66%); // (cta text)
+  --very-light-red: hsl(355, 100%, 74%); // (cta hover background)
+  --very-dark-blue: hsl(208, 49%, 24%); // (headings)
+
+  // neutral
+  --white: hsl(0, 0%, 100%); // (text)
+  --grayish-blue: hsl(240, 2%, 79%); // (footer text)
+  --very-dark-grayish-blue: hsl(207, 13%, 34%); // (body copy)
+  --very-dark-black-blue: hsl(240, 10%, 16%); // (footer background)
+
+  // background gradient - intro/cta mobile nav:
+  --red-gradient-br: linear-gradient(150deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  --red-gradient-r: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+
+  // background gradient - body:
+  --dark-blue-gradient-b: linear-gradient(to bottom, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+  --dark-blue-gradient-r: linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+
+  // fonts
+  --font-primary: "Overpass", sans-serif;
+  --font-secondary: "Ubuntu", sans-serif;
+
+  // transitions
+  --transitionBtn: background-color 0.3s ease;
+
+  --corner-radius: 5em;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+
+  &::after,
+  &::before {
+    box-sizing: border-box;
+  }
+}
+
+body {
+  overflow: overlay;
+  font-family: var(--font-primary);
+
+  &::-webkit-scrollbar {
+    width: 0.5em;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 3em;
+    background-color: var(--grayish-blue);
+  }
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}

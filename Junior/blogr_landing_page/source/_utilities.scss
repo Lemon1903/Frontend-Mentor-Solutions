@@ -1,0 +1,49 @@
+/* Utility classes */
+.show-navbar {
+  display: grid !important;
+
+  .menu-icon {
+    content: url("../images/icon-close.svg");
+  }
+}
+
+.show-dropdown {
+  a {
+    font-weight: 500 !important;
+    color: var(--very-dark-grayish-blue) !important;
+
+    img {
+      rotate: -180deg;
+    }
+  }
+
+  .nav-dropdown {
+    display: grid !important;
+    gap: 1.25em !important;
+    margin-top: 1.25em;
+    padding: 1.25em;
+    background-color: var(--grayish-blue);
+    filter: brightness(1.15);
+  }
+}
+
+.header-button {
+  border: none;
+  border-radius: 2em;
+  width: 8.5em;
+  padding: 0.75em 0;
+  background-color: var(--white);
+  font-family: var(--font-secondary);
+  color: var(--light-red);
+  transition: var(--transitionBtn);
+
+  &:hover {
+    background-color: var(--very-light-red);
+    color: var(--white);
+    cursor: pointer;
+  }
+}
+
+.font-bold {
+  font-weight: bold;
+}

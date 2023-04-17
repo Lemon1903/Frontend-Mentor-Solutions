@@ -1,0 +1,30 @@
+.footer {
+  display: grid;
+  gap: 2.5em;
+  border-top-right-radius: var(--corner-radius);
+  padding-top: 3em;
+  padding-bottom: 4em;
+  background-color: var(--very-dark-black-blue);
+  font-size: 1.125rem;
+  color: var(--white);
+  text-align: center;
+
+  a {
+    line-height: 1.75;
+    color: var(--grayish-blue);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &-logo {
+    margin: 1em;
+  }
+
+  &-link {
+    display: inherit;
+    gap: 1.5em;
+  }
+}
