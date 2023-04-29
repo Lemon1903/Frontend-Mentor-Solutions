@@ -30,4 +30,8 @@ Here is the collection of my Frontend Mentor solutions for practicing<br>and hon
 | [Expenses Chart Component](https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt) | [Live](https://lemon1903.github.io/Frontend-Mentor-Solutions/Junior/expenses_chart_component) | [Repo](https://github.com/Lemon1903/Frontend-Mentor-Solutions/tree/master/Junior/expenses_chart_component) |
 |     [Blogr Landing Page](https://www.frontendmentor.io/challenges/blogr-landing-page-EX2RLAApP/hub)      |    [Live](https://lemon1903.github.io/Frontend-Mentor-Solutions/Junior/blogr_landing_page)    |    [Repo](https://github.com/Lemon1903/Frontend-Mentor-Solutions/tree/master/Junior/blogr_landing_page)    |
 
+|                                                Challenge                                                 |                       Live URL                        |                                                   Repository                                                   |
+| :------------------------------------------------------------------------------------------------------: | :---------------------------------------------------: | :------------------------------------------------------------------------------------------------------------: |
+| [E-commerce Product Page](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6/hub) | [Live](https://ecommerce-product-app-19.netlify.app/) | [Repo](https://github.com/Lemon1903/Frontend-Mentor-Solutions/tree/master/Intermediate/ecommerce-product-page) |
+
 </div>
