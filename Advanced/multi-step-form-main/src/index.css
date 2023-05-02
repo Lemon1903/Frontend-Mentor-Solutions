@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  min-height: 100vh;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  font-family: "Ubuntu", sans-serif;
+}
+
+.plans::-webkit-scrollbar {
+  width: 3px;
+}
+
+.plans::-webkit-scrollbar-thumb {
+  background-color: hsl(229, 24%, 87%);
+}
