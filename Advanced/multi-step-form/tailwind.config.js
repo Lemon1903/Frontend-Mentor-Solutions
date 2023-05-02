@@ -20,8 +20,8 @@ export default {
     },
     extend: {
       backgroundImage: {
-        "sidebar-sm": "url('src/assets/images/bg-sidebar-mobile.svg')",
-        "sidebar-lg": "url('src/assets/images/bg-sidebar-desktop.svg')",
+        "sidebar-sm": "url('./assets/images/bg-sidebar-mobile.svg')",
+        "sidebar-lg": "url('./assets/images/bg-sidebar-desktop.svg')",
       },
     },
   },
