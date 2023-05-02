@@ -37,8 +37,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/multistep-form-built-with-react-tailwind-css-and-redux-fNrzPzPnRS](https://www.frontendmentor.io/solutions/multistep-form-built-with-react-tailwind-css-and-redux-fNrzPzPnRS)
+- Live Site URL: [https://multi-step-form-fr.netlify.app/](https://multi-step-form-fr.netlify.app/)
 
 ## My process
 
