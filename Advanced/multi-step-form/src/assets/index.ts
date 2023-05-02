@@ -1,4 +1,4 @@
-import Advanced from "./images/icon-Advanced.svg";
+import Advanced from "./images/icon-advanced.svg";
 import Arcade from "./images/icon-arcade.svg";
 import Checkmark from "./images/icon-checkmark.svg";
 import Pro from "./images/icon-pro.svg";
