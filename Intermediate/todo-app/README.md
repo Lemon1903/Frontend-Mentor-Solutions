@@ -44,8 +44,8 @@ Light mode
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/todoapp-build-with-react-tailwind-css-and-framermotion-ZCWS92iOsL](https://www.frontendmentor.io/solutions/todoapp-build-with-react-tailwind-css-and-framermotion-ZCWS92iOsL)
+- Live Site URL: [https://lemon-todo-app.netlify.app/](https://lemon-todo-app.netlify.app/)
 
 ## My process
 
