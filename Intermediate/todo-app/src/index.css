@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --heading: hsl(0, 0%, 98%);
+    --accent: hsl(220, 98%, 61%);
+    --check-background: url("./assets/images/icon-check.svg"),
+      linear-gradient(to bottom right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+
+    --mobile: url("./assets/images/bg-mobile-light.jpg");
+    --desktop: url("./assets/images/bg-desktop-light.jpg");
+
+    --background: hsl(236, 33%, 92%);
+    --foreground: hsl(0, 0%, 98%);
+    --primary: hsl(235, 19%, 35%);
+    --secondary: hsl(236, 9%, 61%);
+    --muted: hsl(233, 11%, 84%);
+  }
+
+  .dark {
+    --mobile: url("./assets/images/bg-mobile-dark.jpg");
+    --desktop: url("./assets/images/bg-desktop-dark.jpg");
+
+    --background: hsl(235, 21%, 11%);
+    --foreground: hsl(235, 24%, 19%);
+    --primary: hsl(234, 39%, 85%);
+    --secondary: hsl(233, 14%, 35%);
+    --muted: hsl(233, 14%, 35%);
+  }
+
+  body {
+    @apply bg-background bg-mobile bg-sm bg-no-repeat text-secondary transition-[background-color] duration-300 lg:flex lg:justify-center lg:bg-desktop lg:bg-lg;
+    font-family: "Josefin Sans", sans-serif;
+  }
+}
