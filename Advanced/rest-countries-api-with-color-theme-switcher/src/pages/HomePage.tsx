@@ -3,10 +3,10 @@ import Filter from "../components/Filter";
 import FilterProvider from "../context/FilterContext";
 
 export default function HomePage() {
-	return (
-		<FilterProvider>
+  return (
+    <FilterProvider>
       <Filter />
       <Countries />
     </FilterProvider>
-	)
+  );
 }

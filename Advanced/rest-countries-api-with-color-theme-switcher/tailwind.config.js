@@ -2,10 +2,10 @@
 function withOpacity(variableName) {
   return ({ opacityValue }) => {
     if (opacityValue) {
-      return `hsl(var(${variableName}), ${opacityValue})`
+      return `hsl(var(${variableName}), ${opacityValue})`;
     }
-    return `hsl(var(${variableName}))`
-  }
+    return `hsl(var(${variableName}))`;
+  };
 }
 
 export default {
@@ -26,13 +26,12 @@ export default {
     extend: {
       gridTemplateColumns: {
         // countries: "repeat(auto-fill, 280p
-        countries: "repeat(auto-fill, minmax(280px,1fr))"
+        countries: "repeat(auto-fill, minmax(280px,1fr))",
       },
       brightness: {
         hover: "var(--brightness)",
-      }
+      },
     },
   },
   plugins: [require("@headlessui/tailwindcss")],
-}
-
+};

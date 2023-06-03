@@ -8,7 +8,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <Header />
-      <main className="flex flex-col flex-1 space-y-12 px-4 py-8 md:px-16 md:py-12">
+      <main className="flex flex-1 flex-col space-y-12 px-4 py-8 md:px-16 md:py-12">
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/:name" element={<CountryDetailsPage />} />
