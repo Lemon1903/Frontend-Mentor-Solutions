@@ -42,5 +42,6 @@ Here is the collection of my Frontend Mentor solutions for practicing<br>and hon
 |                                         Challenge                                         |                    Live URL                     |                                             Repository                                              |
 | :---------------------------------------------------------------------------------------: | :---------------------------------------------: | :-------------------------------------------------------------------------------------------------: |
 | [Multi-step form](https://www.frontendmentor.io/challenges/multistep-form-YVAnSdqQBJ/hub) | [Live](https://multi-step-form-fr.netlify.app/) | [Repo](https://github.com/Lemon1903/Frontend-Mentor-Solutions/tree/master/Advanced/multi-step-form) |
+| [REST Countries API with color theme switcher](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca/hub) | [Live](https://multi-step-form-fr.netlify.app/) | [Repo](https://github.com/Lemon1903/Frontend-Mentor-Solutions/tree/master/Advanced/multi-step-form) |
 
 </div>
