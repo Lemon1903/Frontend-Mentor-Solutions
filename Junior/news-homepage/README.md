@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/news-homepage-built-with-react-and-tailwindcss-RX82_L_05f](https://www.frontendmentor.io/solutions/news-homepage-built-with-react-and-tailwindcss-RX82_L_05f)
+- Live Site URL: [https://news-homepage-lmn.netlify.app/](https://news-homepage-lmn.netlify.app/)
 
 ## My process
 
