@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-image-desktop: url("./assets/images/bg-header-desktop.png");
+    --bg-image-mobile: url("./assets/images/bg-header-mobile.png");
+  }
+
+  body {
+    font-family: "Bai Jamjuree", sans-serif;
+  }
+}
