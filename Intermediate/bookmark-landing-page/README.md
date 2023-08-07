@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://www.frontendmentor.io/solutions/bookmark-landing-page-made-with-react-and-tailwindcss-vh-j8-mRx3]([https://your-solution-url.com](https://www.frontendmentor.io/solutions/bookmark-landing-page-made-with-react-and-tailwindcss-vh-j8-mRx3))
+- Solution URL: [https://www.frontendmentor.io/solutions/bookmark-landing-page-made-with-react-and-tailwindcss-vh-j8-mRx3](https://www.frontendmentor.io/solutions/bookmark-landing-page-made-with-react-and-tailwindcss-vh-j8-mRx3)
 - Live Site URL: [https://bookmark-lmn.netlify.app/](https://bookmark-lmn.netlify.app/)
 
 ## My process
