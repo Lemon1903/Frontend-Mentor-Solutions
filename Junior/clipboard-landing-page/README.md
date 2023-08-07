@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/clipboard-landing-page-built-with-react-and-tailwindcss-cjSrzSwoGJ](https://www.frontendmentor.io/solutions/clipboard-landing-page-built-with-react-and-tailwindcss-cjSrzSwoGJ)
+- Live Site URL: [https://clipboard-lmn.netlify.app/](https://clipboard-lmn.netlify.app/)
 
 ## My process
 
