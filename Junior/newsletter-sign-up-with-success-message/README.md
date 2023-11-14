@@ -10,11 +10,7 @@ This is a solution to the [Newsletter sign-up form with success message challeng
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -36,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/newsletter-signup-form-built-with-react-and-tailwindcss-ndncdbWco-](https://www.frontendmentor.io/solutions/newsletter-signup-form-built-with-react-and-tailwindcss-ndncdbWco-)
+- Live Site URL: [https://news-signup-form-lmn.netlify.app/](https://news-signup-form-lmn.netlify.app/)
 
 ## My process
 
