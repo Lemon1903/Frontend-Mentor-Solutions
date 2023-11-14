@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Roboto";
+  font-display: swap;
+  font-weight: 400;
+  src: url("/fonts/Roboto-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-display: swap;
+  font-weight: 700;
+  src: url("/fonts/Roboto-Bold.ttf") format("ttf");
+}
+
+@layer base {
+  :root {
+    --mobile: url("./assets/illustration-sign-up-mobile.svg");
+    --desktop: url("./assets/illustration-sign-up-desktop.svg");
+  }
+
+  body {
+    @apply font-roboto text-foreground bg-background grid min-h-screen place-items-center;
+  }
+}
