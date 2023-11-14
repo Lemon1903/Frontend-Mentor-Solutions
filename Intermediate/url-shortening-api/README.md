@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/url-shortening-landing-page-built-with-react-and-tailwindcss-XbkyqOblZD](https://www.frontendmentor.io/solutions/url-shortening-landing-page-built-with-react-and-tailwindcss-XbkyqOblZD)
+- Live Site URL: [https://url-shortening-lmn.netlify.app/](https://url-shortening-lmn.netlify.app/)
 
 ## My process
 
